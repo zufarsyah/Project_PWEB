@@ -6,115 +6,210 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Meta -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
 	<meta name="description" content="Penjualan Kue">
 	<meta name="keywords" content="Kue, Homemade, Cookies, Online Shop">
 	<meta name="author" content="Dapu & Jupar">
-	<!-- Script -->
-	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap" rel="stylesheet"> 
 </head>
 	
 <body>
 	<nav class="navigasi">
-		<div class="left-nav">
-			<li>Koeku</li>
+		<div class="inner-nav left-nav">
+			<a href="">Koeku</a>
 		</div>
-		<div class="right-nav">
-			<li>Home</li>
-			<li>Daftar Kue</li>
-			<li>Pemesanan Kue</li>
-			<li>Galeri</li>
+
+		<div class="inner-nav right-nav responsive">
+			<a href="#" class="showNav">&#9776;</a>
+		</div>
+
+		<div class="inner-nav right-nav nav-content">
+			<a href="">Galeri</a>
+			<a href="">Pemesanan</a>
+			<a href="">Daftar Kue</a>
+			<a href="" class="active">Home</a>
+		</div>
+
+		<div class="nav-responsive">
+			<a href="">Beranda</a>
+			<a href="">Beranda 2</a>
+			<a href="">Beranda 3</a>
+			<a href="" class="active">Beranda 4</a>
 		</div>
 	</nav>
 
 	<div class="main-part flex al-center jt-center">
 		<div class="main-text text-center">
 			<p class="main-title">KoeKu</p>
-			<p class="main-subtitle">Your Homemade Cookies</p>
+			<p class="main-subtitle fs-25">Your Homemade Cookies</p>
 		</div>
 	</div>
 
-	<div class="desc-part p-t-20 p-b-20">
+	<div class="light-theme-part p-t-50 p-b-50">
 		<div class="container">
 			<div class="de-title pg-title">Toko Koeku</div>
-			<div class="de-desc text-center">
+			<div class="de-desc text-center m-t-10">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
 		</div>
 		</div>
 	</div>
 
-	<div class="cookies-part p-t-10 p-b-10">
+	<div class="dark-theme-part p-t-50 p-b-50">
 		<div class="coo-title pg-title">Daftar Kue</div>
 
-		<div class="coo-pic">
+		<div class="coo-pic m-t-10">
+			<div class="container">
 			<div class="row">
-				<div class="col-3">
-					<div class="coo-box" style="background: red;">
-						<div class="coo-img">A</div>
-						<div class="coo-name">Lorem Ipsum</div>
+				<div class="col-4">
+					<div class="coo-box">
+						<div class="coo-img"><img src="assets/img/burger.png"></div>
+						<div class="coo-name m-t-10 text-center">Lorem Ipsum</div>
 					</div>
 				</div>
 
-				<div class="col-2">
-					<div class="coo-box" style="background: green;">
-						<div class="coo-img">A</div>
-						<div class="coo-name">Lorem Ipsum</div>
+				<div class="col-4">
+					<div class="coo-box">
+						<div class="coo-img"><img src="assets/img/burger.png"></div>
+						<div class="coo-name m-t-10 text-center">Lorem Ipsum</div>
 					</div>
 				</div>
 
-				<div class="col-7">
-					<div class="coo-box" style="background: pink;">
-						<div class="coo-img">A</div>
-						<div class="coo-name">Lorem Ipsum</div>
+				<div class="col-4">
+					<div class="coo-box">
+						<div class="coo-img"><img src="assets/img/burger.png"></div>
+						<div class="coo-name m-t-10 text-center">Lorem Ipsum</div>
+					</div>
+				</div>
+
+				<div class="col-12 m-t-20">
+					<div class="coo-btn">
+						<center><button class="btn btn-theme">Lebih Lengkap</button></center>
 					</div>
 				</div>
 			</div>	
-		</div>
-
-		<div class="coo-btn"><button>Lebih Lengkap</button></div>
-	</div>
-
-	<div class="testimo-part p-t-10 p-b-10">
-		<div class="testi-title pg-title">Testimonial</div>
-
-		<div class="col-4">
-			<div class="cont-review">
-				<div class="cont-info">
-					<div class="cont-name p-left">Zufar</div>
-					<div class="cont-star p-right">A</div>
-				</div>
-
-				<div class="cont-desc">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="footer p-t-10 p-b-10">
+	<div class="light-theme-part p-t-50 p-b-50">
+		<div class="testi-title pg-title">Testimonial</div>
+
+		<div class="container m-t-10">
+		<div class="row">
+			<div class="col-4">
+				<div class="cont-review">
+					<div class="cont-info flex">
+						<div class="cont-name p-left">Zufar</div>
+						<div class="cont-star p-right">
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+						</div>
+					</div>
+
+					<div class="cont-desc text-justify m-t-10">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="cont-review">
+					<div class="cont-info flex">
+						<div class="cont-name p-left">Zufar</div>
+						<div class="cont-star p-right">
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+						</div>
+					</div>
+
+					<div class="cont-desc text-justify m-t-10">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="cont-review">
+					<div class="cont-info flex">
+						<div class="cont-name p-left">Zufar</div>
+						<div class="cont-star p-right">
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+							<span class="checked">☆</span>
+						</div>
+					</div>
+
+					<div class="cont-desc text-justify m-t-10">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="footer p-t-50 p-b-50">
 		<div class="cont-footer">
 			<div class="social-media">
-				<div class="col-6">Instagram</div>
-				<div class="col-6">Facebook</div>
+				<div class="col-12 text-center"><a href="">Instagram</a> • <a href="">Facebook</a></div>
 			</div>
 
 			<div class="useful-link">
-				<li>Info</li>
-				<li>Bantuan</li>
-				<li>Marketing</li>
-				<li>Terms of Use</li>
-			</div>
-
-			<div class="copyright-brand">
-				&copy; KoeKu
+				<div class="row">
+				<div class="col-12 text-center">
+					<a href="">Info</a> • <a href="">Bantuan</a> • 
+					<a href="">Marketing</a> • <a href="">Terms of use</a>
+				</div>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="copyright-brand text-center p-t-10 p-b-10">
+		&copy; KoeKu 2020
+	</div>
 </body>
 </html>
+
+<!-- Script -->
+<script src="js/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".showNav").click(function(){
+			$(".nav-responsive").toggle(500);
+			// $(".active").toggleClass();
+		});
+	});
+</script>
