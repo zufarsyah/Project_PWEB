@@ -94,6 +94,26 @@ div[class*="col"] {
 .container {width: 70%;}
 .container-fluid {width: 90%;}
 
+/*Form*/
+.form-group {
+	margin-top: 10px;
+}
+.form-control {
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid lightgrey;
+	box-sizing: border-box;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	transition: .3s;
+}
+.form-control:focus {
+	border-bottom: 2px solid grey;
+	transition: .3s;
+}
+
 /*Button*/
 .btn {
 	cursor: pointer;
@@ -102,6 +122,8 @@ div[class*="col"] {
 	padding: 10px;
 	font-size: 15px;
 }
+
+.btn-fluid {width: 100%;}
 
 .btn-theme {background: #55423d; color: white;}
 .btn-theme:hover {background: #3a2d29;}
@@ -114,6 +136,7 @@ div[class*="col"] {
 	flex-wrap: wrap;
 	align-items: center;
 	width: 100%;
+	z-index: 2;
 }
 .navigasi a {
 	border-radius: 5px;
@@ -144,6 +167,7 @@ div[class*="col"] {
 	color: black !important;
 }
 .nav-responsive {
+	padding-bottom: 10px;
 	width: 100%;
 	display: none;
 }
@@ -153,6 +177,7 @@ div[class*="col"] {
 }
 
 .responsive {display: none; float: right;}
+.dump-nav {padding: 30px;}
 
 /*Main*/
 .main-part {
@@ -166,11 +191,11 @@ div[class*="col"] {
 .dark-theme-part {background: #ffb59f;}
 /*Web*/
 .pg-title {
-	font-size: 20px;
-	border-bottom: 1px solid black;
+	font-size: 25px;
+	border-bottom: 2px solid black;
 	text-align: center;
 	padding-bottom: 5px;
-	width: 100px;
+	width: 180px;
 }
 .coo-box {
 	background: white;
@@ -189,11 +214,13 @@ div[class*="col"] {
 .p-left {width: 60%;}
 .p-right {width: 40%; text-align: right;}
 
-/*.cont-star > span:hover:before {
-   content: "\2605";
-   position: absolute;
-}*/
 .checked {color: orange;}
+
+.fill-form {
+	background: white;
+	border-radius: 5px;
+	padding: 20px;
+}
 
 /*Footer*/
 .footer {
@@ -215,9 +242,9 @@ div[class*="col"] {
 
 /*Responsive*/
 @media only screen and (max-width: 1024px) {
-	div[class*="col"] {
-		width: 100%;
-	}
+	.container {width: 80%;}
+	div[class*="col"] {width: 100%;}
+
 	.nav-content {display: none;}
 	.responsive {display: block; float: right;}
 
