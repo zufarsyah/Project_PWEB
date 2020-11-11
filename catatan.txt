@@ -1,0 +1,11 @@
+# for x in range (21, 41):
+# 	print('.fs-' + str(x) + ' {font-size: ' + str(x) + 'px}')
+
+# for x in range (10, 41, 10):
+# 	print('.m-t-' + str(x) + ' {margin-top: ' + str(x) + 'px}')
+
+#for x in range (10, 41, 10):
+#	print('.p-t-' + str(x) + ' {padding-top: ' + str(x) + 'px}')
+
+#for x in range (10, 41, 10):
+#	print('.p-b-' + str(x) + ' {padding-bottom: ' + str(x) + 'px}')
