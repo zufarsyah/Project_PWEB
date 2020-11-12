@@ -2,148 +2,16 @@
 	margin: 0 auto;
 	box-sizing: border-box;
 	font-family: 'Dosis', sans-serif;
+	scroll-behavior: smooth;
 }
 
+/*===== Bakery Font =====*/
 @font-face {
 	font-family: 'Bakery';
 	src: url('../assets/fonts/bakery.ttf') format('truetype');
 }
 
-/*Flex*/
-.flex {display: flex}
-.al-center {align-items: center;}
-.jt-center {justify-content: center;}
-
-/*Text Align*/
-.text-center {text-align: center;}
-.text-left {text-align: left;}
-.text-right {text-align: right;}
-.text-justify {text-align: justify;}
-
-/*Margin*/
-.m-t-10 {margin-top: 10px}
-.m-t-20 {margin-top: 20px}
-.m-t-30 {margin-top: 30px}
-.m-t-40 {margin-top: 40px}
-
-/*Padding*/
-.p-t-10 {padding-top: 10px}
-.p-t-20 {padding-top: 20px}
-.p-t-30 {padding-top: 30px}
-.p-t-40 {padding-top: 40px}
-.p-t-50 {padding-top: 50px}
-
-.p-b-10 {padding-bottom: 10px}
-.p-b-20 {padding-bottom: 20px}
-.p-b-30 {padding-bottom: 30px}
-.p-b-40 {padding-bottom: 40px}
-.p-b-50 {padding-bottom: 50px}
-
-/*Font Size*/
-.fs-10 {font-size: 10px}
-.fs-11 {font-size: 11px}
-.fs-12 {font-size: 12px}
-.fs-13 {font-size: 13px}
-.fs-14 {font-size: 14px}
-.fs-15 {font-size: 15px}
-.fs-16 {font-size: 16px}
-.fs-17 {font-size: 17px}
-.fs-18 {font-size: 18px}
-.fs-19 {font-size: 19px}
-.fs-20 {font-size: 20px}
-.fs-21 {font-size: 21px}
-.fs-22 {font-size: 22px}
-.fs-23 {font-size: 23px}
-.fs-24 {font-size: 24px}
-.fs-25 {font-size: 25px}
-.fs-26 {font-size: 26px}
-.fs-27 {font-size: 27px}
-.fs-28 {font-size: 28px}
-.fs-29 {font-size: 29px}
-.fs-30 {font-size: 30px}
-.fs-31 {font-size: 31px}
-.fs-32 {font-size: 32px}
-.fs-33 {font-size: 33px}
-.fs-34 {font-size: 34px}
-.fs-35 {font-size: 35px}
-.fs-36 {font-size: 36px}
-.fs-37 {font-size: 37px}
-.fs-38 {font-size: 38px}
-.fs-39 {font-size: 39px}
-.fs-40 {font-size: 40px}
-.fs-41 {font-size: 41px}
-.fs-42 {font-size: 42px}
-.fs-43 {font-size: 43px}
-.fs-44 {font-size: 44px}
-.fs-45 {font-size: 45px}
-.fs-46 {font-size: 46px}
-.fs-47 {font-size: 47px}
-.fs-48 {font-size: 48px}
-.fs-49 {font-size: 49px}
-.fs-50 {font-size: 50px}
-
-/*Grid*/
-.col-1 {width: 8.333333333333334%}
-.col-2 {width: 16.666666666666668%}
-.col-3 {width: 25%}
-.col-4 {width: 33.333333333333336%}
-.col-5 {width: 41.666666666666664%}
-.col-6 {width: 50%}
-.col-7 {width: 58.333333333333336%}
-.col-8 {width: 66.66666666666667%}
-.col-9 {width: 75%}
-.col-10 {width: 83.33333333333333%}
-.col-11 {width: 91.66666666666667%}
-.col-12 {width: 100%}
-
-div[class*="col"] {
-	float: left;
-	padding: 10px;
-}
-
-.row::after {
-	content: "";
-  	clear: both;
-  	display: table;
-}
-.container {width: 70%;}
-.container-fluid {width: 90%;}
-
-/*Form*/
-.form-group {
-	margin-top: 10px;
-}
-.form-control {
-	background: transparent;
-	border: none;
-	border-bottom: 2px solid lightgrey;
-	box-sizing: border-box;
-	margin-top: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 100%;
-	transition: .3s;
-}
-.form-control:focus {
-	border-bottom: 2px solid grey;
-	transition: .3s;
-}
-
-/*Button*/
-.btn {
-	cursor: pointer;
-	border: none;
-	border-radius: 5px;
-	padding: 10px;
-	font-size: 15px;
-}
-
-.btn-fluid {width: 100%;}
-
-.btn-theme {background: #55423d; color: white;}
-.btn-theme:hover {background: #3a2d29;}
-
-/*Navigasi*/
+/*===== Navigasi =====*/
 .navigasi {
 	background: #55423d;
 	position: fixed;
@@ -192,7 +60,7 @@ div[class*="col"] {
 .responsive {display: none; float: right;}
 .dump-nav {padding: 30px;}
 
-/*Main*/
+/*===== Specific Page (index.html) =====*/
 .main-part {
 	background: url('../assets/img/bgMain.jpg');
 	background-repeat: no-repeat;
@@ -207,13 +75,12 @@ div[class*="col"] {
 	height: 100vh;
 	width: 100%;
 }
-
 .main-text {z-index: 2;}
 
+/*===== All Pages =====*/
 .light-theme-part {background: #ffc0ad;}
 .dark-theme-part {background: #ffb59f;}
 
-/*Web*/
 .pg-title {
 	font-size: 25px;
 	border-bottom: 2px solid black;
@@ -221,32 +88,45 @@ div[class*="col"] {
 	padding-bottom: 5px;
 	width: 180px;
 }
-.coo-box {
+.card-box {
 	background: white;
 	border-radius: 10px;
 	padding: 20px;
 }
-.coo-img img {
+.card-img img {
 	width: 100%;
 	border-radius: 10px;
 }
-.cont-review {
-	background: white;
-	padding: 20px;
-	border-radius: 5px;
-}
+
 .p-left {width: 60%;}
 .p-right {width: 40%; text-align: right;}
 
-.checked {color: orange;}
+.star {color: orange;}
 
+.arrow-button {
+	background: #ffc0ad;
+	border: 1px solid #55423d;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	padding: 5px;
+	position: fixed;
+	bottom: 2%;
+	right: -50%;
+	transition: .4s;
+}
+.arrow-button:hover {background: #ffb59f;}
+
+/*===== Specific Page (pemesanan.html) =====*/
 .fill-form {
 	background: white;
-	border-radius: 5px;
+	border-radius: 10px;
 	padding: 20px;
 }
 
-/*Footer*/
+/*===== Footer =====*/
 .footer {
 	background: #55423d;
 	color: white;
@@ -264,11 +144,8 @@ div[class*="col"] {
 	color: white;
 }
 
-/*Responsive*/
+/*===== Responsive =====*/
 @media only screen and (max-width: 1024px) {
-	.container {width: 80%;}
-	div[class*="col"] {width: 100%;}
-
 	.nav-content {display: none;}
 	.responsive {display: block; float: right;}
 
