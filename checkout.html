@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- Title & Link -->
-	<title>KoeKu</title>
+	<title>Pemesanan</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/homemade-framework.css">
 	<!-- Meta -->
@@ -29,7 +29,7 @@
 		<div class="right-nav nav-content">
 			<a href="index.html"><li>Home</li></a>
 			<a href="daftarKue.html"><li>Daftar Kue</li></a>
-			<a href="galeri.html"><li class="active">Galeri</li></a>
+			<a href="galeri.html"><li>Galeri</li></a>
 			<div class="dropdown">
 				<a href="#" class="webShowDropdown"><li>Akun</li></a>
 				<a href="#" class="mobileShowDropdown"><li>Akun</li></a>
@@ -38,89 +38,89 @@
 				</div>
 			</div>
 
-			<a href="checkout.html"><li>&#128722;</li></a>
+			<a href="checkout.html"><li class="active">&#128722;</li></a>
 		</div>
 	</nav>
 
 	<div class="dump-nav"></div>
 
 	<div class="light-theme-part p-t-50 p-b-50">
-		<div class="container-fluid">
-			<div class="pg-title">Galeri</div>
-	
-			<div class="row m-t-10">
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
+		<div class="container">
+
+		<div class="pg-title text-center">Keranjang</div>
+
+		<div class="fill-form m-t-10">
+			<div class="row">
+				<div class="col-1">
+					<div class="checkout-img">
+						<img src="assets/img/chocochips.png">
 					</div>
 				</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
+				<div class="col-10">
+					<div>
+						<b>Kue Chocochips</b>
+						<div class="m-t-10 text-justify">
+							<b>Rp 100.000</b> | 4 pcs
+						</div>
 					</div>
 				</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
+				<div class="col-1">
+					<button class="btn btn-fluid btn-theme">-</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-1">
+					<div class="checkout-img">
+						<img src="assets/img/salju.png">
 					</div>
 				</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
+				<div class="col-10">
+					<div>
+						<b>Kue Putri Salju</b>
+						<div class="m-t-10 text-justify">
+							<b>Rp 75.000</b> | 3 pcs
+						</div>
 					</div>
 				</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
-					</div>
+				<div class="col-1">
+					<button class="btn btn-fluid btn-theme">-</button>
 				</div>
+			</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
-					</div>
-				</div>
+			<div class="form-group fs-30" style="border-top: 2px solid #55423d;">
+				<b>Total:</b> Rp 175.000
+			</div>
+		</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
-					</div>
-				</div>
+		<div class="pg-title text-center m-t-20">Data Pengiriman</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
-					</div>
-				</div>
+		<div class="fill-form p-t-10 p-b-10 m-t-10">
+			<div class="form-group">
+				<label for="alamat">Alamat:</label>
+				<textarea class="form-control" name="alamat" placeholder="Alamat Anda"></textarea>
+			</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
-					</div>
-				</div>
+			<div class="form-group">
+				<label for="tanggalDiambil">Tanggal Ambil:</label>
+				<input type="date" name="tanggalDiambil" class="form-control">
+			</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
-					</div>
-				</div>
+			<div class="form-group">
+				<label for="catatan">Catatan:</label>
+				<textarea class="form-control" name="catatan" placeholder="Catatan"></textarea>
+			</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
-					</div>
-				</div>
+			<div class="form-group">
+				<button class="btn btn-theme btn-fluid">Pesan</button>
+			</div>
 
-				<div class="col-4">
-					<div class="card-box">
-						<div class="card-img"><img src="assets/img/burger.png"></div>
-					</div>
-				</div>
-			</div>	
+		</div>
+
 		</div>
 	</div>
 

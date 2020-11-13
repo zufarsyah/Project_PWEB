@@ -1,3 +1,7 @@
+/*===== Font Color =====*/
+.color-brown {color: #55423d;}
+.color-white {color: white;}
+
 /*===== Flex =====*/
 .flex {display: flex}
 .al-center {align-items: center;}
@@ -146,6 +150,7 @@ div[class*="col"] {
 
 /*===== Responsive =====*/
 @media only screen and (max-width: 1024px) {
+	/*===== Grid =====*/
 	.container {width: 80%;}
 	div[class*="col"] {width: 100%;}
 }

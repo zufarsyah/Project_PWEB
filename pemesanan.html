@@ -30,6 +30,15 @@
 			<a href="index.html"><li>Home</li></a>
 			<a href="daftarKue.html"><li class="active">Daftar Kue</li></a>
 			<a href="galeri.html"><li>Galeri</li></a>
+			<div class="dropdown">
+				<a href="#" class="webShowDropdown"><li>Akun</li></a>
+				<a href="#" class="mobileShowDropdown"><li>Akun</li></a>
+				<div class="dropdown-content">
+					<a href="login.html"><li>Login/Register</li></a>
+				</div>
+			</div>
+
+			<a href="checkout.html"><li>&#128722;</li></a>
 		</div>
 	</nav>
 
@@ -64,16 +73,17 @@
 					<div class="m-t-10">
 						<b>Banyak Produk:</b>
 						<div class="text-justify">
-							<input type="number" name="quantity" placeholder="Banyak Produk" class="form-control">
+							<input type="number" name="quantity" id="quantity" placeholder="Banyak Produk" class="form-control" value="1">
+							<input type="hidden" name="productPrice" id="productPrice" value="25000">
 						</div>
 						<div class="m-t-10 fs-20">
-							Rp 25.000
+							<div id="totalPrice">Rp 25000</div>
 						</div>
 					</div>
 
 					<div class="m-t-10">
 						<div class="col-6">
-							<a href="#"><button class="btn btn-fluid btn-theme">Checkout</button></a>
+							<a href="checkout.html"><button class="btn btn-fluid btn-theme">Checkout</button></a>
 						</div>
 
 						<div class="col-6">
@@ -83,49 +93,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- <div class="fill-form p-t-10 p-b-10 m-t-10">
-			
-			<div class="form-group">
-				<label for="nama">Nama:</label>
-				<input type="text" name="nama" placeholder="Nama Anda" class="form-control">
-			</div>
-
-			<div class="form-group">
-				<label for="alamat">Alamat:</label>
-				<textarea class="form-control" name="alamat" placeholder="Alamat Anda"></textarea>
-			</div>
-
-			<div class="form-group">
-				<label for="tanggalPemesanan">Tanggal Pemesanan:</label>
-				<input type="date" name="tanggalPemesanan" id="getTodayDate" disabled class="form-control">
-			</div>
-
-			<div class="form-group">
-				<label for="tanggalDiambil">Tanggal Ambil:</label>
-				<input type="date" name="tanggalDiambil" class="form-control">
-			</div>
-
-			<div class="form-group">
-				<label for="itemKue">Item:</label>
-				<select name="itemKue" class="form-control">
-					<option value="">Pilih Kue</option>
-					<option value="Kue Coklat">Kue Coklat</option>
-					<option value="Kue Stroberi">Kue Stroberi</option>
-					<option value="Kue Nanas">Kue Nanas</option>
-				</select>
-			</div>
-
-			<div class="form-group">
-				<label for="catatan">Catatan:</label>
-				<textarea class="form-control" name="catatan" placeholder="Catatan"></textarea>
-			</div>
-
-			<div class="form-group">
-				<button class="btn btn-theme btn-fluid">Simpan</button>
-			</div>
-
-		</div> -->
 
 		<div class="pg-title text-center m-t-20">Rekomendasi Lainnya</div>
 
