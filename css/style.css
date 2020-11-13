@@ -18,45 +18,37 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	font-size: 18px;
 	width: 100%;
+	padding: 0px 10px 0px 10px;
 	z-index: 3;
 }
-.navigasi a {
+.navigasi li {
+	list-style: none;
+	overflow: hidden;
+	display: inline-block;
+}
+.navigasi a li {
 	border-radius: 5px;
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-left: 10px;
-	margin-right: 10px;
-	font-size: 18px;
 	color: white;
 	text-decoration: none;
+	padding: 10px 20px 10px 20px;
+	margin: 0px 10px 0px 10px;
+	text-align: center;
 }
-
-.left-nav a {font-family: 'Bakery'; font-size: 30px;}
-.inner-nav {padding: 20px;}
-.active {background: #ffc0ad;color: black !important;}
+.left-nav a li {
+	font-family: 'Bakery'; 
+	font-size: 30px;
+}
+.right-nav a li:hover {
+	background: #ffc0ad; 
+	color: black;
+}
 
 .left-nav {width: 50%;}
-.right-nav {width: 50%;}
-.right-nav a {float: right;}
+.right-nav {width: 50%; text-align: right;}
 
-.nav-content {display: block;}
-.navigasi a:hover {
-	background: #ffc0ad;
-	color: black !important;
-}
-.nav-responsive {
-	padding-bottom: 10px;
-	width: 100%;
-	display: none;
-}
-.nav-responsive a {
-	display: block;
-	padding: 20px;
-}
-
+.active {background: #ffc0ad; color: black !important;}
 .responsive {display: none; float: right;}
 .dump-nav {padding: 30px;}
 
@@ -86,7 +78,7 @@
 	border-bottom: 2px solid black;
 	text-align: center;
 	padding-bottom: 5px;
-	width: 180px;
+	width: 220px;
 }
 .card-box {
 	background: white;
@@ -94,8 +86,10 @@
 	padding: 20px;
 }
 .card-img img {
-	width: 100%;
 	border-radius: 10px;
+	width: 100%;
+	object-fit: cover;
+	height: 160px;
 }
 
 .p-left {width: 60%;}
@@ -125,6 +119,12 @@
 	border-radius: 10px;
 	padding: 20px;
 }
+.checkout-description {
+	border: 1px solid #40322f;
+}
+.checkout-img img {
+	width: 100%;
+}
 
 /*===== Footer =====*/
 .footer {
@@ -146,11 +146,19 @@
 
 /*===== Responsive =====*/
 @media only screen and (max-width: 1024px) {
-	.nav-content {display: none;}
-	.responsive {display: block; float: right;}
-
-	.active {
-		background: none;
-		color: white !important;
+	.nav-content {width: 100%; display: none;}
+	.nav-content li {
+		text-align: left !important; 
+		display: block;
 	}
-}
+
+	.right-nav {padding: 10px 0px 10px 0px;}
+	.right-nav a li {
+		margin-top: 10px;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	.right-nav a li:hover {background: #40322f; color: white;}
+	.active {background: transparent; color: white !important;}
+	.responsive {display: block; float: right;}

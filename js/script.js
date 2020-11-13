@@ -1,11 +1,7 @@
 $(document).ready(function(){
 	// ===== Toggle mobile nav on click =====
-	$(document).click(function(event) {
-  		if(!$(event.target).is('.showNav')) {
-  			$(".nav-responsive").hide(500);
-  		} else {
-  			$(".nav-responsive").toggle(500);
-  		}
+	$(".showNav").click(function() {
+		$(".nav-content").toggle(500);
 	});
 
 	// ===== Scroll to Top on click =====

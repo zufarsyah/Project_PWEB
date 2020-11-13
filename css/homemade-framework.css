@@ -120,6 +120,16 @@ div[class*="col"] {
 	transition: .3s;
 }
 
+.fc-regular {
+	background: white;
+	border-radius: 5px;
+	border-bottom: none;
+	padding: 8px;
+}
+.fc-regular:focus {
+	border-bottom: none;
+}
+
 /*===== Button =====*/
 .btn {
 	cursor: pointer;
