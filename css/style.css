@@ -12,67 +12,107 @@
 }
 
 /*===== Navigasi =====*/
-.navigasi {
+.navigation {
 	background: #55423d;
 	position: fixed;
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
-	font-size: 18px;
+	padding: 10px; 
 	width: 100%;
-	padding: 0px 10px 0px 10px;
 	z-index: 3;
 }
-.navigasi li {
-	list-style: none;
-	overflow: hidden;
-	display: inline-block;
-}
-.navigasi a li {
-	border-radius: 5px;
+
+.navigation li {display: inline-block; list-style: none;}
+
+.navigation a {
 	color: white;
 	text-decoration: none;
-	padding: 10px 20px 10px 20px;
-	text-align: center;
-}
-.left-nav a li {
-	font-family: 'Bakery'; 
-	font-size: 30px;
-}
-.right-nav a li:hover {
-	background: #ffc0ad; 
-	color: black;
+	padding: 10px;
 }
 
-.left-nav {width: 50%;}
-.right-nav {width: 50%; text-align: right;}
+.brand-logo {font-family: 'Bakery'; font-size: 30px;}
+.left-nav {width: 20%;}
 
-.active {background: #ffc0ad; color: black !important;}
-.responsive {display: none; float: right;}
-.dump-nav {padding: 30px;}
+.right-nav {text-align: right; width: 80%;}
+.right-nav li {padding: 10px; text-align: center;}
 
+.right-nav li:hover {
+	background: #ffc0ad;
+	border-radius: 5px;
+	color: #55423d;
+}
+
+.active {
+	background: #ffc0ad;
+	border-radius: 5px;
+	color: #55423d;
+}
+
+/*===== Navigasi Dropdown =====*/
 .dropdown {
 	position: relative;
 	display: inline-block;
 }
+
 .dropdown-content {
+	background: #3c2e2b;
+	border-radius: 10px;
 	display: none;
 	position: absolute;
-	background-color: #3c2e2b;
-	border-radius: 5px;
-	left: auto;
+	width: 160px;
+	padding: 5px;
 	right: 0;
-	z-index: 1;
-}
-.dropdown-content a li {
-	margin: 0;
-	width: 100%;
 }
 
-.dropdown-content a {text-decoration: none;}
-.dropdown-content {padding: 10px;}
-.mobileShowDropdown {display: none;}
+.dropbtn {cursor: pointer; color: white;}
+
+.dropdown-content a {
+	background: #3c2e2b;
+	color: white;
+	padding: 0;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.dropdown-content a:hover {
+	background-color: #ffc0ad;
+	border-radius: 10px;
+	color: #55423d;
+}
+
 .dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-toggle {display: none;}
+.dropdown-toggle a {padding: 10px;}
+.dump-nav {padding: 20px;}
+
+/*===== Navigasi Res =====*/
+.responsive-nav {display: none;}
+.responsive-nav li {padding: 10px;}
+.responsive-nav .dropbtn {padding: 10px;}
+
+.responsive-menu li {
+	display: none;
+	text-align: left;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.responsive-menu li:hover {background: transparent;}
+#nav-toggle {color: white; cursor: pointer;}
+
+.nav-dim {
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	display: none;
+	z-index: 2;
+}
 
 /*===== Specific Page (index.html) =====*/
 .main-part {
@@ -89,11 +129,14 @@
 	height: 100vh;
 	width: 100%;
 }
-.main-text {z-index: 2;}
+
+.main-text {z-index: 1;}
 
 /*===== All Pages =====*/
 .light-theme-part {background: #ffc0ad;}
 .dark-theme-part {background: #ffb59f;}
+
+.de-desc {line-height: 1.5;}
 
 .pg-title {
 	font-size: 25px;
@@ -194,30 +237,9 @@
 /*===== Responsive =====*/
 @media only screen and (max-width: 768px) {
 	/*===== Navigasi =====*/
-	.nav-content {width: 100%; display: none;}
-	.nav-content li {
-		text-align: left !important; 
-		display: block;
-	}
-
-	.right-nav {padding: 10px 0px 10px 0px;}
-	.right-nav a li {
-		margin-top: 10px;
-		cursor: pointer;
-		text-decoration: none;
-	}
-
-	.right-nav a li:active {background: #40322f; color: white;}
-	.active {background: transparent; color: white !important;}
-	.responsive {display: block; float: right;}
-
-	.webShowDropdown {display: none;}
-	.dropdown, .mobileShowDropdown {display: block;}
-	.dropdown-content { 
-		background: transparent;
-		position: relative; 
-	}
-	.dropdown:hover .dropdown-content {display: none;}
+	.left-nav {display: none;}
+	.responsive-nav {display: block; width: 100%;}
+	.default-nav {display: none;}
 
 	/*===== Specific Page (register.html / login.html) =====*/
 	.form-box {width: 90%;}

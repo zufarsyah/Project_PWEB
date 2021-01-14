@@ -3,8 +3,8 @@
 <head>
 	<!-- Title & Link -->
 	<title>Pemesanan</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/homemade-framework.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/homemade-framework.css">
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
@@ -17,30 +17,43 @@
 </head>
 
 <body>
-	<nav class="navigasi flex">
+	<!-- Nav -->
+	<div class="navigation">
 		<div class="left-nav">
-			<a href="#"><li>Koeku</li></a>
+			<a href="../index.html"><li class="brand-logo">KoeKu</li></a>
 		</div>
 
-		<div class="right-nav responsive">
-			<a href="#" class="showNav"><li>&#9776;</li></a>
-		</div>
-
-		<div class="right-nav nav-content">
-			<a href="index.html"><li>Home</li></a>
+		<div class="right-nav default-nav">
 			<a href="daftarKue.html"><li class="active">Daftar Kue</li></a>
 			<a href="galeri.html"><li>Galeri</li></a>
+			
 			<div class="dropdown">
-				<a href="#" class="webShowDropdown"><li>Akun</li></a>
-				<a href="#" class="mobileShowDropdown"><li>Akun</li></a>
+				<li class="dropbtn">Akun</li>
 				<div class="dropdown-content">
 					<a href="login.html"><li>Login/Register</li></a>
 				</div>
-			</div>
+			</div> 
 
 			<a href="checkout.html"><li>&#128722;</li></a>
 		</div>
-	</nav>
+
+		<div class="responsive-nav">
+			<li id="nav-toggle">&#9776;</li>
+			<div class="responsive-menu">
+				<li><a href="../index.html">Beranda</a></li>
+				<li><a href="daftarKue.html">Daftar Kue</a></li>
+				<li><a href="galeri.html">Galeri</a></li>
+				<li class="dropbtn" id="dropbtn-mobile">Akun</li>
+			</div>
+
+			<div class="dropdown-toggle">
+				<a href="login.html"><li>Login/Register</li></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="nav-dim"></div>
+	<!-- End of nav -->
 
 	<div class="dump-nav"></div>
 
@@ -53,7 +66,7 @@
 			<div class="row">
 				<div class="col-6">
 					<div class="checkout-img">
-						<img src="assets/img/chocochips.png">
+						<img src="../assets/img/chocochips.png">
 					</div>
 				</div>
 
@@ -99,7 +112,7 @@
 		<div class="row m-t-10">
 			<div class="col-4">
 				<div class="card-box">
-					<div class="card-img"><img src="assets/img/chocochips.png"></div>
+					<div class="card-img"><img src="../assets/img/chocochips.png"></div>
 					<div class="card-desc m-t-10">
 					Kue Chocochips
 					<p>Rp 25.000</p>
@@ -119,7 +132,7 @@
 
 			<div class="col-4">
 				<div class="card-box">
-					<div class="card-img"><img src="assets/img/almon.png"></div>
+					<div class="card-img"><img src="../assets/img/almon.png"></div>
 					<div class="card-desc m-t-10">
 					Kue Almond London
 					<p>Rp 25.000</p>
@@ -139,7 +152,7 @@
 
 			<div class="col-4">
 				<div class="card-box">
-					<div class="card-img"><img src="assets/img/salju.png"></div>
+					<div class="card-img"><img src="../assets/img/salju.png"></div>
 					<div class="card-desc m-t-10">
 					Kue Putri Salju
 					<p>Rp 25.000</p>
@@ -187,5 +200,5 @@
 </html>
 
 <!-- Script -->
-<script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/script.js"></script>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/script.js"></script>

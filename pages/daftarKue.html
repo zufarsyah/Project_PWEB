@@ -3,8 +3,8 @@
 <head>
 	<!-- Title & Link -->
 	<title>Daftar Kue</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/homemade-framework.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/homemade-framework.css">
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
@@ -17,30 +17,43 @@
 </head>
 
 <body>
-	<nav class="navigasi flex">
+	<!-- Nav -->
+	<div class="navigation">
 		<div class="left-nav">
-			<a href="#"><li>Koeku</li></a>
+			<a href="../index.html"><li class="brand-logo">KoeKu</li></a>
 		</div>
 
-		<div class="right-nav responsive">
-			<a href="#" class="showNav"><li>&#9776;</li></a>
-		</div>
-
-		<div class="right-nav nav-content">
-			<a href="index.html"><li>Home</li></a>
+		<div class="right-nav default-nav">
 			<a href="daftarKue.html"><li class="active">Daftar Kue</li></a>
 			<a href="galeri.html"><li>Galeri</li></a>
+			
 			<div class="dropdown">
-				<a href="#" class="webShowDropdown"><li>Akun</li></a>
-				<a href="#" class="mobileShowDropdown"><li>Akun</li></a>
+				<li class="dropbtn">Akun</li>
 				<div class="dropdown-content">
 					<a href="login.html"><li>Login/Register</li></a>
 				</div>
-			</div>
+			</div> 
 
 			<a href="checkout.html"><li>&#128722;</li></a>
 		</div>
-	</nav>
+
+		<div class="responsive-nav">
+			<li id="nav-toggle">&#9776;</li>
+			<div class="responsive-menu">
+				<li><a href="../index.html">Beranda</a></li>
+				<li><a href="daftarKue.html">Daftar Kue</a></li>
+				<li><a href="galeri.html">Galeri</a></li>
+				<li class="dropbtn" id="dropbtn-mobile">Akun</li>
+			</div>
+
+			<div class="dropdown-toggle">
+				<a href="login.html"><li>Login/Register</li></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="nav-dim"></div>
+	<!-- End of nav -->
 
 	<div class="dump-nav"></div>
 
@@ -50,14 +63,14 @@
 
 			<div class="row">
 				<div class="col-12">
-					<input type="text" name="search" placeholder="Cari Kue" class="form-control fc-regular">
+					<input type="text" id="searchItems" name="search" placeholder="Cari Kue" class="form-control fc-regular">
 				</div>
 			</div>
 			
 			<div class="row m-t-10">
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/chocochips.png"></div>
+						<div class="card-img"><img src="../assets/img/chocochips.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Chocochips
 						<p>Rp 25.000</p>
@@ -75,9 +88,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/nastar.png"></div>
+						<div class="card-img"><img src="../assets/img/nastar.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Nastar
 						<p>Rp 25.000</p>
@@ -95,9 +108,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/almon.png"></div>
+						<div class="card-img"><img src="../assets/img/almon.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Almond London
 						<p>Rp 25.000</p>
@@ -115,9 +128,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/salju.png"></div>
+						<div class="card-img"><img src="../assets/img/salju.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Putri Salju
 						<p>Rp 25.000</p>
@@ -135,9 +148,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/nougat.png"></div>
+						<div class="card-img"><img src="../assets/img/nougat.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Kering Nougat
 						<p>Rp 25.000</p>
@@ -155,9 +168,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/sabit.png"></div>
+						<div class="card-img"><img src="../assets/img/sabit.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Sabit
 						<p>Rp 25.000</p>
@@ -175,9 +188,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/semprit.png"></div>
+						<div class="card-img"><img src="../assets/img/semprit.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Semprit
 						<p>Rp 25.000</p>
@@ -195,9 +208,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/klemben.png"></div>
+						<div class="card-img"><img src="../assets/img/klemben.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Bolu Klemben
 						<p>Rp 25.000</p>
@@ -215,9 +228,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/sagu.png"></div>
+						<div class="card-img"><img src="../assets/img/sagu.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Sagu
 						<p>Rp 25.000</p>
@@ -235,9 +248,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/kuping.png"></div>
+						<div class="card-img"><img src="../assets/img/kuping.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Kuping Gajah
 						<p>Rp 25.000</p>
@@ -255,9 +268,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/semprong.png"></div>
+						<div class="card-img"><img src="../assets/img/semprong.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Semprong
 						<p>Rp 25.000</p>
@@ -275,9 +288,9 @@
 					</div>
 				</div>
 
-				<div class="col-3">
+				<div class="col-3 items">
 					<div class="card-box">
-						<div class="card-img"><img src="assets/img/keciprut.png"></div>
+						<div class="card-img"><img src="../assets/img/keciprut.png"></div>
 						<div class="card-desc m-t-10">
 						Kue Keciprut
 						<p>Rp 25.000</p>
@@ -296,6 +309,86 @@
 				</div>
 			</div>	
 		</div>
+	</div>
+
+	<div class="dark-theme-part p-t-50 p-b-50">
+	<div class="container">
+		<div class="pg-title">Testimonial Paling Baru</div>
+
+		<div class="row m-t-10">
+			<div class="col-4">
+				<div class="card-box">
+					<div class="card-content flex">
+						<div class="p-left">Zufar</div>
+						<div class="p-right">
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+						</div>
+					</div>
+
+					<div class="text-justify m-t-10">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="card-box">
+					<div class="card-content flex">
+						<div class="p-left">Zufar</div>
+						<div class="p-right">
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+						</div>
+					</div>
+
+					<div class="text-justify m-t-10">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div class="card-box">
+					<div class="card-content flex">
+						<div class="p-left">Zufar</div>
+						<div class="p-right">
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+							<span class="star">☆</span>
+						</div>
+					</div>
+
+					<div class="text-justify m-t-10">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 
 	<div class="footer p-t-50 p-b-50">
@@ -324,5 +417,5 @@
 </html>
 
 <!-- Script -->
-<script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/script.js"></script>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script src="../js/script.js"></script>
