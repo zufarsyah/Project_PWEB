@@ -84,8 +84,7 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown-toggle {display: none;}
-.dropdown-toggle a {padding: 10px;}
+.dropdown-toggle {display: none; margin-left: 20px;}
 .dump-nav {padding: 20px;}
 
 /*===== Navigasi Res =====*/
